@@ -78,6 +78,7 @@ body {
   font-size: 2.5rem;
   font-family: "Rubik", sans-serif;
     font-weight: 500;
+  padding-top: 20px;
 }
 
 .aboutMeP {
@@ -87,10 +88,6 @@ body {
     letter-spacing: -0.3px;
     padding-top: 15px;
     line-height: 163%;
-}
-
-.aboutMeSection{
-
 }
 
 .aboutMeTitle span,
@@ -400,6 +397,10 @@ figure.single:hover figcaption a:hover{
   color:#000000;
   transition: all 0.2s;
   text-decoration: none;
+}
+
+.aboutMeTitle{
+    padding-top: 0px;
 }
 
 }
