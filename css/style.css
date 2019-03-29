@@ -22,6 +22,7 @@ body {
 	height:50px;
 	background-size:cover;
 	background-repeat: no-repeat;
+  display:none;
 }
 
 .slides-navigation a.prev{
@@ -297,6 +298,11 @@ figure.single figcaption a {
 }
 
 @media only screen and (min-width:540px) {
+
+  .slides-navigation .prev,
+  .slides-navigation .next{
+      display: block;
+  }
 
 figure.single {
   position: relative;
