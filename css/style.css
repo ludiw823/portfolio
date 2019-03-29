@@ -107,74 +107,23 @@ figure.single {
   margin: 15px;
   width: 100%;
   text-align: center;
-  background: #000000;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  background: rgba(165,94,234, 1);
 }
+
+
 figure.single figcaption {
-  position: absolute;
+  position: relative;
   padding:15px;
-  top: 30%;
-  left: 0;
   width:100%;
-  color: rgba(255,255,255,0);
-  -webkit-transition: all 0.35s ease-in-out;
-  transition: all 0.35s ease-in-out;
+  color: #fff;
 }
 
 figure.single figcaption a {
-    font-weight:bolder;
-	background-color:rgba(9, 27, 39, 0);
-	color:rgba(165,94,234, 0);
-}
-
-figure.single:before {
-  background: rgba(9, 27, 39, 0);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  content: "";
-  display: block;
-  -webkit-transition: all 0.35s ease-in-out;
-  transition: all 0.35s ease-in-out;
-}
-figure.single:hover:before {
-  background: rgba(9, 27, 39, 1);
-  -webkit-transition: all 0.35s ease-in-out;
-  transition: all 0.35s ease-in-out;
-}
-
-/*figure .single :hover {
-  background: rgba(9, 27, 39, 1);
-}*/
-
-figure.single:hover figcaption{
-  color:#000;
-  background-color: rgba(255, 255, 255, 0.8);
-  /*-webkit-clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 10%);
-clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 10%);*/
-  position: absolute;
-  top: 30%;
-  left: 0;
-  -webkit-transition: all 0.35s ease-in-out;
-  transition: all 0.35s ease-in-out;
-}
-
-figure.single:hover figcaption a{
-	background-color:rgba(9, 27, 39, 1);
-	color:rgba(165,94,234, 1);
-	-webkit-transition: all 0.35s ease-in-out;
-  	transition: all 0.35s ease-in-out;
-  	padding:7px 17px;
-  	border-radius: 17px;
-}
-
-figure.single:hover figcaption a:hover{
-	background-color: rgb(165,94,234);
-	color:#000000;
-	transition: all 0.2s;
-	text-decoration: none;
+   font-weight:bolder;
+   background-color:#fff;
+   color:rgba(165,94,234, 1);
+   padding:5px 17px;
+   border-radius: 17px;
 }
 
 .contactButton {
@@ -346,3 +295,80 @@ figure.single:hover figcaption a:hover{
   height:100%;
   background: url("../img/808.gif") center center no-repeat;
 }
+
+@media only screen and (min-width:540px) {
+
+figure.single {
+  position: relative;
+  margin: 15px;
+  width: 100%;
+  text-align: center;
+  background: #000000;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+figure.single figcaption {
+  position: absolute;
+  padding:15px;
+  top: 30%;
+  left: 0;
+  width:100%;
+  color: rgba(255,255,255,0);
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+figure.single figcaption a {
+    font-weight:bolder;
+  background-color:rgba(9, 27, 39, 0);
+  color:rgba(165,94,234, 0);
+}
+
+figure.single:before {
+  background: rgba(9, 27, 39, 0);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  content: "";
+  display: block;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+figure.single:hover:before {
+  background: rgba(9, 27, 39, 1);
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+
+figure.single:hover figcaption{
+  color:#000;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 30%;
+  left: 0;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+figure.single:hover figcaption a{
+  background-color:rgba(9, 27, 39, 1);
+  color:rgba(165,94,234, 1);
+  -webkit-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    padding:7px 17px;
+    border-radius: 17px;
+}
+
+figure.single:hover figcaption a:hover{
+  background-color: rgb(165,94,234);
+  color:#000000;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+}
+
+
+

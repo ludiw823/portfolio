@@ -4,6 +4,7 @@ $(window).on("load",  ()=>{
 	});
 })
 
+
 $(document).ready(function() {
 
 	$('#slides').superslides({
