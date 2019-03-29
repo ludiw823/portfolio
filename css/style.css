@@ -1,0 +1,332 @@
+body {
+	font-size:14px;
+	color:#293347;
+	letter-spacing: 1px; 
+	background-color: #fff;
+}
+
+.overlay{
+	width:100%;
+	height:100%;
+	position:absolute;
+	z-index:3;
+	background-color: rgba(0,0,0,0.4); 
+}
+
+.slides-navigation{
+	z-index:6;
+}
+.slides-navigation .prev,
+.slides-navigation .next{
+	width:50px;
+	height:50px;
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+.slides-navigation a.prev{
+	left:20px;
+	background-image: url(../img/icon/back.png);
+}
+
+.slides-navigation a.next{
+	right:20px;
+	background-image: url(../img/icon/next.png);
+}
+.titleMessage{
+	position: absolute;
+    z-index: 5;
+    /* text-align: center; */
+    width: 100%;
+    height: 250px;
+    top: 50%;
+    margin-top: -100px;
+    text-align: center;
+}
+.titleMessage  .heading p {
+ 	color: #FFFFFF;
+ 	text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+ 	font-weight: 150;
+ 	letter-spacing: 5px;
+
+}
+
+.titleMessage .heading .main{
+	font-size: 55px;
+}
+
+.titleMessage .heading .sub{
+	font-size: 25px;
+}
+
+.section {
+	padding:100px 0px;
+}
+
+.aboutImage{
+	max-width: 100%;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+
+.projectSection {
+	background-color: rgb(165,94,234);
+
+}
+
+.projectSection .project-title{
+	letter-spacing: 0.5px;
+	color:#fff;
+}
+
+.projectSection .project-title p{
+	font-weight:lighter;
+}
+
+.projectSection .project-title p a{
+	font-weight:lighter;
+	color:#fff;
+	text-decoration: underline;
+}
+
+.project-grid img{
+	width:100%;
+	height: auto;
+}
+
+.project-grid h2 {
+	font-size:1rem;
+	letter-spacing: 0.5px;
+}
+
+
+figure.single {
+  position: relative;
+  margin: 15px;
+  width: 100%;
+  text-align: center;
+  background: #000000;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+figure.single figcaption {
+  position: absolute;
+  padding:15px;
+  top: 30%;
+  left: 0;
+  width:100%;
+  color: rgba(255,255,255,0);
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+figure.single figcaption a {
+    font-weight:bolder;
+	background-color:rgba(9, 27, 39, 0);
+	color:rgba(165,94,234, 0);
+}
+
+figure.single:before {
+  background: rgba(9, 27, 39, 0);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  content: "";
+  display: block;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+figure.single:hover:before {
+  background: rgba(9, 27, 39, 1);
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+/*figure .single :hover {
+  background: rgba(9, 27, 39, 1);
+}*/
+
+figure.single:hover figcaption{
+  color:#000;
+  background-color: rgba(255, 255, 255, 0.8);
+  /*-webkit-clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 10%);
+clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 10%);*/
+  position: absolute;
+  top: 30%;
+  left: 0;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+figure.single:hover figcaption a{
+	background-color:rgba(9, 27, 39, 1);
+	color:rgba(165,94,234, 1);
+	-webkit-transition: all 0.35s ease-in-out;
+  	transition: all 0.35s ease-in-out;
+  	padding:7px 17px;
+  	border-radius: 17px;
+}
+
+figure.single:hover figcaption a:hover{
+	background-color: rgb(165,94,234);
+	color:#000000;
+	transition: all 0.2s;
+	text-decoration: none;
+}
+
+.contactButton {
+	padding: 15px 20px;
+	letter-spacing: 0.5px;
+	border:1px solid #293347;
+	border-radius:2px;
+	margin-top:20px;
+	color:#293347;
+}
+
+.contactButton:hover {
+	background-color: rgb(165,94,234);
+	color:#fff;
+	transition: all 0.2s ease-in-out;
+	text-decoration: none;
+	font-weight: bold;
+	border:none;
+}
+
+.contactSection h2{
+   font-size:1rem;
+   font-weight: lighter;
+   padding-top:10px;
+   margin-bottom: -20px;
+}
+
+.contactSection p{
+   font-size:2rem;
+   font-weight:normal;
+   padding-top:50px;
+}
+
+.contactSection .iconLink{
+	padding:0px 20px 5px 20px;
+}
+
+
+/* contact Section swing animation*/
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    } 
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.contactSection .iconLink:hover{
+	-webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.copyrightSection {
+	background-color: rgb(165,94,234);
+	color:#fff;
+	
+}
+
+.copyrightSection p{
+	letter-spacing: 0.3px;
+	padding:30px;
+	font-weight: lighter;
+}
+
+#navgation {
+	 background-color: rgb(165,94,234);
+	 padding:15px 10px;
+	 z-index: 100;
+	 width:100%;
+}
+
+#navgation li {
+	padding: 0 10px;
+}
+
+
+#navgation li a{
+	color:#fff;
+}
+
+.navbar-brand, 
+.navbar-brand:hover {
+	color:#fff;
+}
+
+.navbar-toggler-icon{
+	background: url("../img/icon/menu.png");
+	background-size:100%;
+}
+
+.fixedNav #navgation{
+    position:fixed;
+    top:0;
+}
