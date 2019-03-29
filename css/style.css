@@ -330,3 +330,19 @@ figure.single:hover figcaption a:hover{
     position:fixed;
     top:0;
 }
+
+.loader {
+  width:100%;
+  height:100%;
+  background-color: #fff;
+  position: fixed;
+  top:0px;
+  left:0px;
+  z-index:1000;
+}
+
+.loader .inner {
+  width:100%;
+  height:100%;
+  background: url("../img/808.gif") center center no-repeat;
+}
