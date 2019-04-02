@@ -14,7 +14,7 @@ $(document).ready(function() {
 	});
 
 	var typed = new Typed(".typed", {
-		strings:["Master of Engineer" ,"Enjoy coding", "Enjoy life"],
+		strings:["Master of Engineering" ,"Enjoy coding", "Enjoy life"],
 		typeSpeed:80,
 		loop:true,
 		startDelay:1000,
